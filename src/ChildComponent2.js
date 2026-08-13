@@ -1,14 +1,14 @@
 import React from 'react';
 
-function ChildComponent2({ onSelectOption }) {
+const ChildComponent2 = ({ setSelectedOption }) => {
   return (
-    <div style={{ border: '1px solid olive', padding: '10px', margin: '10px' }}>
-      <h3>Child Component 2</h3>
-      <button onClick={() => onSelectOption('Option 2')}>
-        Option 2
+    <div className="child-component-2">
+      <h2>Child Component 2</h2>
+      <button onClick={() => setSelectedOption('Option B')}>
+        Option B
       </button>
     </div>
   );
-}
+};
 
 export default ChildComponent2;
